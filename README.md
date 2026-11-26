@@ -1,11 +1,13 @@
-# Blank VS Code Extension
+# VS Code Starter and Dummy Interface
 
-A minimal, dependency-free Visual Studio Code extension starter.
+This repository includes a minimal VS Code extension starter and a small, dependency-free VS Code-inspired interface.
 
-## Run
+## Dummy interface
 
-1. Open this folder in VS Code.
-2. Press `F5` to launch an Extension Development Host.
-3. Add activation events and extension behavior in `extension.js` as needed.
+Open `index.html` in a browser. Select files in the Explorer to preview their contents or use the status bar to show and hide the terminal panel.
 
-Update the `publisher` value in `package.json` before publishing.
+## Extension starter
+
+Open this folder in VS Code and press `F5` to launch an Extension Development Host. Add activation events and extension behavior in `extension.js` as needed.
+
+Update the `publisher` value in `package.json` before publishing the extension.
