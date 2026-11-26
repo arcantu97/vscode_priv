@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Visual Studio Code — Dummy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="window">
+      <header class="titlebar">
+        <div class="titlebar-brand"><span class="code-mark" aria-hidden="true">⌘</span> Visual Studio Code</div>
+        <nav class="menu" aria-label="Main menu">
+          <button>File</button>
+          <button>Edit</button>
+          <button>Selection</button>
+          <button>View</button>
+          <button>Go</button>
+          <button>Run</button>
+          <button>Terminal</button>
+          <button>Help</button>
+        </nav>
+        <button class="command-center" aria-label="Search">⌕ <span>vscode-dummy</span></button>
+        <div class="window-controls" aria-hidden="true"><span>−</span><span>□</span><span>×</span></div>
+      </header>
+
+      <div class="workspace">
+        <aside class="activity-bar" aria-label="Activity bar">
+          <button class="activity active" data-panel="explorer" aria-label="Explorer" title="Explorer">▤</button>
+          <button class="activity" aria-label="Search" title="Search">⌕</button>
+          <button class="activity" aria-label="Source Control" title="Source Control">⑂</button>
+          <button class="activity" aria-label="Run and Debug" title="Run and Debug">▷</button>
+          <button class="activity" aria-label="Extensions" title="Extensions">▧</button>
+          <button class="activity bottom" aria-label="Manage" title="Manage">⚙</button>
+        </aside>
+
+        <aside class="sidebar" id="sidebar" aria-label="Explorer">
+          <div class="sidebar-heading">EXPLORER <button aria-label="More actions">···</button></div>
+          <button class="project-heading">⌄ &nbsp; VSCODE-DUMMY</button>
+          <div class="file-tree">
+            <button class="file active" data-file="welcome.js"><span class="file-icon js">JS</span>welcome.js</button>
+            <button class="file" data-file="README.md"><span class="file-icon md">M</span>README.md</button>
+            <button class="file" data-file="package.json"><span class="file-icon json">{ }</span>package.json</button>
+          </div>
+          <div class="sidebar-section">OUTLINE</div>
+          <div class="outline">⌄ &nbsp; welcome.js<br><span>ƒ &nbsp; greet(name)</span></div>
+          <div class="sidebar-section">TIMELINE</div>
+        </aside>
+
+        <main class="editor-area">
+          <div class="tabs" role="tablist" aria-label="Open files">
+            <button class="tab active" id="active-tab" role="tab" aria-selected="true"><span class="file-icon js" id="tab-icon">JS</span><span id="tab-name">welcome.js</span><span class="tab-close">×</span></button>
+            <div class="tab-spacer"></div>
+            <button class="editor-action" aria-label="Split editor">◫</button>
+            <button class="editor-action" aria-label="More editor actions">···</button>
+          </div>
+          <div class="breadcrumbs"><span>vscode-dummy</span><span>›</span><span id="breadcrumb-name">welcome.js</span><span id="breadcrumb-separator">›</span><span id="breadcrumb-symbol">greet</span></div>
+          <section class="editor" aria-label="Code editor">
+            <div class="line-numbers" id="line-numbers" aria-hidden="true"></div>
+            <pre class="code" id="code" aria-live="polite"></pre>
+          </section>
+          <section class="terminal" id="terminal">
+            <div class="terminal-tabs"><button>PROBLEMS</button><button>OUTPUT</button><button>DEBUG CONSOLE</button><button class="selected">TERMINAL</button><span></span><button id="hide-terminal" aria-label="Close terminal">×</button></div>
+            <pre><span class="prompt">➜</span>  vscode-dummy <span class="muted">git:(main)</span> ✗</pre>
+          </section>
+        </main>
+      </div>
+
+      <footer class="statusbar">
+        <div><span>⑂</span> main* &nbsp; ⟳ &nbsp; <span class="error">× 0</span> &nbsp; <span class="warning">△ 0</span></div>
+        <div><button id="toggle-terminal">⏣ &nbsp; Toggle Panel</button><span>Ln 1, Col 1</span><span>Spaces: 2</span><span>UTF-8</span><span id="language">JavaScript</span><span>◉ &nbsp; Go Live</span></div>
+      </footer>
+    </div>
+  </body>
+</html>
