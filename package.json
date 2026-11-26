@@ -1,0 +1,14 @@
+{
+  "name": "blank-vscode-extension",
+  "displayName": "Blank VS Code Extension",
+  "description": "A minimal starter for a VS Code extension.",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension.js"
+}
